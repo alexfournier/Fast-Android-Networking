@@ -27,6 +27,7 @@ android {
         versionCode 1
         versionName "1.0"
         consumerProguardFiles 'proguard-rules.pro'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -40,11 +41,11 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation "junit:junit:$rootProject.ext.jUnitVersion"
     androidTestImplementation "com.squareup.okhttp3:mockwebserver:$rootProject.ext.mockWebServerVersion"
-    implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okHttp3Version"
-    implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
-    implementation "com.android.support:appcompat-v7:$rootProject.ext.supportAppCompatVersion"
+    api "com.squareup.okhttp3:okhttp:$rootProject.ext.okHttp3Version"
+    api "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+    api "com.android.support:appcompat-v7:$rootProject.ext.supportAppCompatVersion"
 }
 //apply from: 'upload.gradle'

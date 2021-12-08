@@ -36,6 +36,16 @@ public class ANError extends Exception {
 
     private Response response;
 
+    public Throwable getThrowable() {
+        return throwable;
+    }
+
+    public void setThrowable(Throwable throwable) {
+        this.throwable = throwable;
+    }
+
+    private Throwable throwable;
+
     public ANError() {
     }
 
@@ -68,6 +78,7 @@ public class ANError extends Exception {
 
     public ANError(Throwable throwable) {
         super(throwable);
+        this.throwable = throwable;
     }
 
     public Response getResponse() {

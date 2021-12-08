@@ -1,3 +1,5 @@
+https://jitpack.io/#alexfournier/Fast-Android-Networking
+
 <img src=https://raw.githubusercontent.com/amitshekhariitbhu/Fast-Android-Networking/master/assets/androidnetworking.png >
 
 # Fast Android Networking Library

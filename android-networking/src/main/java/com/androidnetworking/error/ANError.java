@@ -36,14 +36,6 @@ public class ANError extends Exception {
 
     private Response response;
 
-    public Throwable getThrowable() {
-        return throwable;
-    }
-
-    public void setThrowable(Throwable throwable) {
-        this.throwable = throwable;
-    }
-
     private Throwable throwable;
 
     public ANError() {
@@ -83,6 +75,14 @@ public class ANError extends Exception {
 
     public Response getResponse() {
         return response;
+    }
+
+    public Throwable getThrowable() {
+        return throwable;
+    }
+
+    public void setThrowable(Throwable throwable) {
+        this.throwable = throwable;
     }
 
     public void setErrorDetail(String errorDetail) {
